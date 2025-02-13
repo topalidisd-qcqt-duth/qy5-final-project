@@ -63,7 +63,3 @@ def calc_entropy_p(n, L):
     result, error = quad(entropy_p, a, b, args=(n,L,), limit=1000)   
 
     return c*result
-
-s_x_ground_state = round(calc_entropy_x(1,0.05), 4)
-s_p_ground_state = round(calc_entropy_p(1,0.05), 4)
-s_t_ground_state = s_x_ground_state + s_p_ground_state
